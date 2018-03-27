@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE 班级 [
+<!ELEMENT 班级 (学生+)>
+<!ELEMENT 学生 (姓名,出生日期)>
+<!ELEMENT 姓名 (#PCDATA)>
+<!ELEMENT 出生日期(#PCDATA)>
+]>
+<班级>
+<学生 学号="ID1200054">
+<姓名>杨习涛</姓名>
+<出生日期>1997年10月14日</出生日期>
+</学生>
+</班级>
+

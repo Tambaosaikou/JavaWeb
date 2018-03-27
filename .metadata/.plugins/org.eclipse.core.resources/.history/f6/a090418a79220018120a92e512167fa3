@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:书 xmlns:tns="http://www.example.org/test0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/test0 test0.xsd ">
+<书名>Java</书名>
+</tns:书>

@@ -1,0 +1,38 @@
+package net.jxvtc.Servlet;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import net.jxvtc.Servlet.User;
+
+public class IndexServlet extends HttpServlet{
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		resp.setContentType("text/html;charset=utf-8");
+		HttpSession session = req.getSession();
+		User user = (User) session.getAttribute("user");
+		if(user == null) {
+			resp.getWriter().print("Äú»¹Ã»ÓÐµÇÂ¼£¬Çë<a href='/UserLogin/login.html'>µÇÂ¼</a>");
+		}
+		else {
+			resp.getWriter().print("ÄúÒÑµÇÂ¼£¬»¶Ó­Äã£¬"+user.getUsername()+"!");
+			resp.getWriter().print("<a href='/UserLogin/LogoutServlet'>ÍË³ö</a>");
+			Cookie cookie = new Cookie("JSESSIONID", session.getId());
+			cookie.setMaxAge(60*30);
+			cookie.setPath("/UserLogin");
+			resp.addCookie(cookie);
+		}
+	}
+	
+@Override
+protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	doGet(req,resp);
+}
+
+}

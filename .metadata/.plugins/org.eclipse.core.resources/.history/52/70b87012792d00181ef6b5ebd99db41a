@@ -1,0 +1,13 @@
+package net.jxvtc.cart.dao;
+
+import java.util.Map;
+
+import net.jxvtc.cart.pojo.Book;
+
+public class BookDB {
+	private static Map<String, Book> books;
+
+	static {
+
+	}
+}

@@ -1,0 +1,5 @@
+package net.jxvtc.cart.pojo;
+
+public class BookDB {
+
+}
