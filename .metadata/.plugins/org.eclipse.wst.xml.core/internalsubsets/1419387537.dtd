@@ -1,0 +1,12 @@
+
+<!ELEMENT library (books,records)>
+<!ELEMENT books (book+)>
+<!ELEMENT book (title)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT records (item+)>
+<!ELEMENT item (data,person)>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT person EMPTY>
+<!ELEMENT book bookid ID #REQUIRED>
+<!ELEMENT person name CDATA #REQUIRED>
+<!ELEMENT person borrowed IDREFS #REQUIRED>

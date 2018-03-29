@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<书 xmlns="http://www.example.org/test01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/test01 test01.xsd ">
+	<书名>书名</书名>
+	<作者>作者</作者>
+	<售价>0.0</售价>
+	<已发行时间>1</已发行时间>
+	<性别>男</性别>
+	<EMAIL>123456@qqcom</EMAIL>
+	<出版社 名称="XX出版社"></出版社>
+</书>

@@ -1,0 +1,9 @@
+
+   <!ELEMENT 班级 (学生+)>
+   <!ELEMENT 学生 (姓名,出生日期)>
+   <!ELEMENT 姓名 (#PCDATA)>
+   <!ELEMENT 出生日期 (#PCDATA)>
+   <!ATTLIST 学生
+             学号 ID #REQUIRED
+             性别 (男|女) #IMPLIED>
+
