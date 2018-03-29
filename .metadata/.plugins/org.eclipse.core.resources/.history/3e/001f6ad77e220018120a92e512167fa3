@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<书 xmlns="http://www.example.org/test0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/test0 test0.xsd ">
+	<书名>:书名</书名>
+	<作者>:作者</作者>
+	<售价>0.0</售价>
+	<已发行的时间>10</已发行的时间>
+	<性别>男</性别>
+</书>

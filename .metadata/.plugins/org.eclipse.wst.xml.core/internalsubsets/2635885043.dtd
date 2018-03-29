@@ -1,0 +1,4 @@
+
+<!ELEMENT 购物篮 ANY>
+<!ELEMENT 肉 EMPTY>
+<!ATTLIST 肉 品种 (鸡肉|牛肉|猪肉|鱼肉) "鸡肉">

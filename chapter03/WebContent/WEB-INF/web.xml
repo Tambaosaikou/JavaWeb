@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+=======
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+>>>>>>> a695c9cea1234860975bd084b1cc4c5ac24c793b
   <display-name>chapter03</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
@@ -10,6 +14,7 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
+<<<<<<< HEAD
     <description></description>
     <display-name>TestServlet01</display-name>
     <servlet-name>TestServlet01</servlet-name>
@@ -44,4 +49,23 @@
     <servlet-name>TestServlet02</servlet-name>
     <url-pattern>/TestServlet02</url-pattern>
   </servlet-mapping>
+=======
+  <servlet-name>TestServlet01</servlet-name>
+  <servlet-class>
+  cn.itcast.chapter03.servlet.TestServlet01
+  </servlet-class>
+  <init-param>
+  <param-name>encoding</param-name>
+  <param-value>UTF-8</param-value>
+  </init-param>
+  </servlet>
+	<servlet-mapping>
+		<servlet-name>TestServlet01</servlet-name>
+		<url-pattern>/TestServlet01</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TestServlet01</servlet-name>
+		<url-pattern>/Test01</url-pattern>
+	</servlet-mapping>
+>>>>>>> a695c9cea1234860975bd084b1cc4c5ac24c793b
 </web-app>

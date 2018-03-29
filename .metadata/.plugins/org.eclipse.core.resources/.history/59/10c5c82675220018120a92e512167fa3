@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE 班级[
+<!ELEMENT 班级 ANY>
+<!ELEMENT 学生 (学号,姓名,出生日期)>
+<!ELEMENT 学号(#PCDATA)>
+<!ELEMENT 姓名 (#PCDATA)>
+<!ELEMENT 出生日期(#PCDATA)>
+]>
+<班级>
+<学生><学号></学号></学生>
+</班级>
+

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
   <display-name>day05</display-name>
   <welcome-file-list>
@@ -32,4 +33,37 @@
   <url-pattern>/req</url-pattern>
   </servlet-mapping>
   <!-- 配置Servlet结束 -->
+=======
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>JavaWebCourse</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<!-- 第一个Servlet配置开始 -->
+	<servlet>
+		<servlet-name>HelloWorldServlet</servlet-name>
+		<servlet-class>cn.itcast.firstapp.servlet.HelloWorldServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HelloWorldServlet</servlet-name>
+		<url-pattern>/HelloWorldServlet</url-pattern>
+	</servlet-mapping>
+	<!-- 第一个Servlet配置结束 -->
+	<servlet>
+		<servlet-name>Servlet2</servlet-name>
+		<servlet-class>cn.itcast.firstapp.servlet.RequestMethodServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Servlet2</servlet-name>
+		<url-pattern>/req</url-pattern>
+	</servlet-mapping>
+>>>>>>> a695c9cea1234860975bd084b1cc4c5ac24c793b
 </web-app>

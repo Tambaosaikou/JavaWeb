@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;PhrchaseServlet.java&apos; to &apos;net.jxvtc.cart.web.servlet.PhrchaseServlet.java&apos;&#x0D;&#x0A;- Original project: &apos;CartDemo&apos;&#x0D;&#x0A;- Destination element: &apos;net.jxvtc.cart.web.servlet.PhrchaseServlet.java&apos;&#x0D;&#x0A;- Original element: &apos;net.jxvtc.cart.web.servlet.PhrchaseServlet.java&apos;" description="Copy compilation unit" destination="/src&lt;net.jxvtc.cart.web.servlet{PhrchaseServlet.java" element1="/src&lt;net.jxvtc.cart.web.servlet{PhrchaseServlet.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1522050080475" units="1" version="1.0"/>
+</session>

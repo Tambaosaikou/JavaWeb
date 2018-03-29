@@ -1,2 +1,6 @@
 eclipse.preferences.version=1
+<<<<<<< HEAD
 org.eclipse.rse.preferences.order.connections=stu19.Local
+=======
+org.eclipse.rse.preferences.order.connections=foolish.Local
+>>>>>>> a695c9cea1234860975bd084b1cc4c5ac24c793b

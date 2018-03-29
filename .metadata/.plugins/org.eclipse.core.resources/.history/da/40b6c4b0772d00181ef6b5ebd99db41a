@@ -1,0 +1,8 @@
+package net.jxvtc.cart.pojo;
+
+public class Book {
+	private String id;
+	
+	
+	
+}

@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
+<<<<<<< HEAD
 欢迎,java Web
+=======
+欢迎,Java Web!
+>>>>>>> a695c9cea1234860975bd084b1cc4c5ac24c793b
 </body>
 </html>

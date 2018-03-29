@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/test0"
+	xmlns:tns="http://www.example.org/test0" elementFormDefault="qualified">
+
+	<element name="书">
+		<complexType>
+			<sequence>
+				<element name="书名" type="string"></element>
+				<element name="作者" type="string"></element>
+				<element name="售价" type="double"></element>
+				<element name="已发行的时间">
+					<simpleType>
+						<restriction base="int">
+							<minInclusive value="1"></minInclusive>
+							<maxInclusive value="11"></maxInclusive>
+						</restriction>
+					</simpleType>
+				</element>
+				<element name="性别">
+					<simpleType>
+						<restriction base="string">
+							<enumeration value="男"></enumeration>
+							<enumeration value="女"></enumeration>
+						</restriction>
+					</simpleType>
+				</element>
+				<element>
+					<simpleType>
+						<restriction base="string">
+							<pattern value="[a-zA-z0-9_-]+@[a-zA-Z0-9_-]+"></pattern>
+						</restriction>
+					</simpleType>
+				</element>
+			</sequence>
+		</complexType>
+
+	</element>
+</schema>

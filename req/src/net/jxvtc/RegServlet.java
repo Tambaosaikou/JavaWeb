@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+<<<<<<< HEAD
 /**
  * Servlet implementation class Demo1Servlet
  */
@@ -26,6 +27,20 @@ public class RegServlet extends HttpServlet {
 	}
 
 	
+=======
+import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
+
+@WebServlet("/reg")
+public class RegServlet extends HttpServlet {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
+		String[] hobbys = request.getParameterValues("hobby");
+		System.out.println(username+":"+password);
+		System.out.println(Arrays.asList(hobbys));
+	}
+>>>>>>> a695c9cea1234860975bd084b1cc4c5ac24c793b
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request,response);
 	}
